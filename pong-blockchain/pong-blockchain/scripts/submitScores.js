@@ -1,7 +1,7 @@
-const { ethers } = require("hardhat");
+import { ethers } from '/hardhat';
 
 async function main() {
-    const contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"; // your deployed contract address
+    const contractAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"; 
     const TournamentScores = await ethers.getContractFactory("TournamentScores");
     const tournamentScores = await TournamentScores.attach(contractAddress);
 
