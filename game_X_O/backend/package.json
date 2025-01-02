@@ -1,0 +1,15 @@
+{
+    "name": "x-o-challenge-backend",
+    "version": "1.0.0",
+    "description": "Backend for X O Challenge",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "socket.io": "^4.8.1"
+    },
+    "author": "",
+    "license": "ISC"
+}

@@ -1,0 +1,163 @@
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Mood Diary dApp</title>
+//     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+// </head>
+// <body>
+
+// <h1>Mood Diary dApp</h1>
+// <label for="mood">Input Mood:</label>
+// <input type="text" id="mood">
+// <button onclick="setMood()">Set Mood</button>
+// <button onclick="getMood()">Get Mood</button>
+
+// <script>
+// const MoodContractAddress = "0xd9145CCE52D386f254917e481eB44e9943F39138";
+// const MoodContractABI = [
+//     {
+//       "anonymous": false,
+//       "inputs": [
+//         {
+//           "indexed": true,
+//           "internalType": "address",
+//           "name": "user",
+//           "type": "address"
+//         },
+//         {
+//           "indexed": false,
+//           "internalType": "string",
+//           "name": "name",
+//           "type": "string"
+//         },
+//         {
+//           "indexed": false,
+//           "internalType": "uint256",
+//           "name": "score",
+//           "type": "uint256"
+//         },
+//         {
+//           "indexed": false,
+//           "internalType": "uint8",
+//           "name": "rank",
+//           "type": "uint8"
+//         }
+//       ],
+//       "name": "UserDataUpdated",
+//       "type": "event"
+//     },
+//     {
+//       "inputs": [
+//         {
+//           "internalType": "address",
+//           "name": "",
+//           "type": "address"
+//         }
+//       ],
+//       "name": "users",
+//       "outputs": [
+//         {
+//           "internalType": "string",
+//           "name": "name",
+//           "type": "string"
+//         },
+//         {
+//           "internalType": "uint256",
+//           "name": "score",
+//           "type": "uint256"
+//         },
+//         {
+//           "internalType": "uint8",
+//           "name": "rank",
+//           "type": "uint8"
+//         }
+//       ],
+//       "stateMutability": "view",
+//       "type": "function",
+//       "constant": true
+//     },
+//     {
+//       "inputs": [
+//         {
+//           "internalType": "string",
+//           "name": "_name",
+//           "type": "string"
+//         },
+//         {
+//           "internalType": "uint256",
+//           "name": "_score",
+//           "type": "uint256"
+//         },
+//         {
+//           "internalType": "uint8",
+//           "name": "_rank",
+//           "type": "uint8"
+//         }
+//       ],
+//       "name": "setUserData",
+//       "outputs": [],
+//       "stateMutability": "nonpayable",
+//       "type": "function"
+//     },
+//     {
+//       "inputs": [
+//         {
+//           "internalType": "address",
+//           "name": "_user",
+//           "type": "address"
+//         }
+//       ],
+//       "name": "getUserData",
+//       "outputs": [
+//         {
+//           "internalType": "string",
+//           "name": "",
+//           "type": "string"
+//         },
+//         {
+//           "internalType": "uint256",
+//           "name": "",
+//           "type": "uint256"
+//         },
+//         {
+//           "internalType": "uint8",
+//           "name": "",
+//           "type": "uint8"
+//         }
+//       ],
+//       "stateMutability": "view",
+//       "type": "function",
+//       "constant": true
+//     }
+//   ];
+
+// async function setMood() {
+//     const moodInput = document.getElementById("mood").value;
+//     if (typeof window.ethereum !== 'undefined') {
+//         const provider = new ethers.providers.Web3Provider(window.ethereum);
+//         const signer = provider.getSigner();
+//         const moodContract = new ethers.Contract(MoodContractAddress, MoodContractABI, signer);
+//         const tx = await moodContract.setMood(moodInput);
+//         await tx.wait();
+//         alert("Mood set to: " + moodInput);
+//     } else {
+//         alert("Please install MetaMask!");
+//     }
+// }
+
+// async function getMood() {
+//     if (typeof window.ethereum !== 'undefined') {
+//         const provider = new ethers.providers.Web3Provider(window.ethereum);
+//         const moodContract = new ethers.Contract(MoodContractAddress, MoodContractABI, provider);
+//         const mood = await moodContract.getMood();
+//         alert("Current Mood: " + mood);
+//     } else {
+//         alert("Please install MetaMask!");
+//     }
+// }
+// </script>
+
+// </body>
+// </html> -->
