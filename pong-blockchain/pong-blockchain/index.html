@@ -161,12 +161,6 @@
                 alert("Failed to deploy contract: " + error.message);
             }
         }
-
-        async function submitScore() {
-            if (!contract) {
-                alert("Please deploy the contract first.");
-                return;
-            }
             
             const name = document.getElementById("name").value;
             const score = document.getElementById("score").value;
@@ -184,7 +178,6 @@
                 console.error(err);
                 alert("An error occurred while submitting the score");
             }
-        }
 
         async function getScore() {
             const playerAddress = document.getElementById("playerAddress").value;
