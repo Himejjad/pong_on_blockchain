@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8545:8545"  # Map port 3000 inside the container to port 3000 on the host
+    volumes:
+      - .:/usr/src/app  # Mount the current directory into the container
