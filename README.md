@@ -268,19 +268,7 @@ npx hardhat compile
 npx hardhat verify --network localhost <CONTRACT_ADDRESS>
 ```
 
-## 🤝 Contributing
 
-Contributions are welcome! Please focus on:
-
-- Smart contract security improvements
-- Gas optimization
-- Multi-network support
-- Enhanced tournament features
-- Comprehensive testing
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgments
 
